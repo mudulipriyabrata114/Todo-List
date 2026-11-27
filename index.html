@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Task Manager ✨</h1>
+            <p>Organize your day. Achieve your goals.</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h2 id="totalTasks">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="pendingTasks">0</h2>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedTasks">0</h2>
+                <p>Completed</p>
+            </div>
+        </div>
+
+        <div class="task-input">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What do you need to do?"
+            >
+
+            <button id="addBtn">+ Add Task</button>
+        </div>
+
+        <div class="task-section">
+            <h2>My Tasks</h2>
+
+            <div id="taskList"></div>
+
+            <p id="emptyMessage">No tasks yet. Add your first task!</p>
+        </div>
+
+        <footer>
+            Made with ❤️ by Priyabrata
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
